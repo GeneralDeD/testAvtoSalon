@@ -1,0 +1,40 @@
+.sidebar {
+	@apply w-80 pt-40 px-9 pb-6 min-h-screen flex flex-col justify-between bg-white;
+
+	&__unactive {
+		@apply hidden;
+	}
+
+	&__link {
+		@apply flex items-center gap-3 text-gray-500 font-medium cursor-pointer transition-all mb-3;
+
+		svg {
+			@apply fill-gray-500 w-4 h-4;
+		}
+
+		&:hover {
+			svg {
+				@apply fill-gray-600;
+			}
+			@apply text-gray-600;
+		}
+
+		&__active {
+			svg {
+				@apply fill-black;
+			}
+		}
+	}
+
+	@media (max-width: 1000px) {
+		width: 250px;
+		display: block !important;
+		transition: all 0.2s ease;
+
+		&__unactive {
+			width: 0;
+
+			transform: translateX(-400px);
+		}
+	}
+}

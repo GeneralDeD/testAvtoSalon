@@ -1,0 +1,24 @@
+.home {
+	@apply w-full min-h-screen flex;
+
+	&__right {
+		width: calc(100% - 250px);
+		@apply ml-auto transition-all;
+
+		&__title {
+			@apply mb-8;
+		}
+
+		&__unactive {
+			@apply w-full;
+		}
+
+		&__mobTabs {
+			@apply hidden;
+		}
+	}
+
+	&__loading {
+		@apply w-full h-screen flex;
+	}
+}

@@ -1,0 +1,37 @@
+.login {
+	@apply w-full h-screen relative;
+
+	&__block {
+		@apply absolute top-1/2 left-1/2 max-w-lg -ml-64 -mt-32 bg-white rounded-3xl py-5 px-4 text-center;
+
+		table {
+			td {
+				@apply p-0;
+			}
+
+			td:first-child {
+				@apply w-[30%] text-left;
+			}
+
+			td:last-child {
+				@apply w-1/2 text-right;
+
+				input {
+					@apply w-full;
+				}
+			}
+		}
+
+		h2 {
+			@apply font-bold text-xl mb-3;
+		}
+
+		button {
+			@apply flex items-center justify-center mx-auto mt-3 py-3 px-5 font-bold text-white bg-blue-600 rounded-xl;
+		}
+
+		&__switcher {
+			@apply w-2/5 ml-auto mb-4;
+		}
+	}
+}

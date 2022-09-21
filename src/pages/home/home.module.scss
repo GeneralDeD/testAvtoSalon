@@ -1,0 +1,39 @@
+.home {
+	@apply m-10 p-3 bg-white rounded-md;
+
+	&__header {
+		@apply flex p-3 items-center justify-between mb-8;
+
+		&__title {
+			@apply relative text-xl font-medium pl-8;
+
+			&::before {
+				content: "";
+				@apply absolute top-0 left-0 bg-[#FFD88D] rounded-[4px] w-4 h-8;
+			}
+		}
+
+		&__buttons {
+			@apply flex items-center gap-8;
+
+			&__item {
+				@apply flex items-center p-3 pr-2 font-bold text-white bg-blue-600 rounded-xl;
+
+				svg {
+					@apply mr-3;
+				}
+			}
+		}
+	}
+
+	&__table {
+		table {
+			div {
+				@apply flex items-center justify-center gap-3;
+				span {
+					@apply cursor-pointer;
+				}
+			}
+		}
+	}
+}
